@@ -1,54 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ВяЖу</title>
-    <!-- шрифт -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- стили -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./icons/favicons">
-    <link rel="apple-touch-icon" sizes="60x60" href="./icons/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./icons/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./icons/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./icons/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./icons/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./icons/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./icons/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./icons/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./icons/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./icons/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-</head>
-
-<body>
-    <!-- Header Nav -->
-    <header class="header padding-top-12px">
-        <nav class="nav">
-            <a href="index.html"><img class="nav__logo margin-right-100px" src="./icons/new-logo-vector.svg" alt=""></a>
-            <ul class="nav__menu">
-                <li><a class="nav__menu-item margin-right-100px" href="spitsy.html">Спицы</a></li>
-                <li><a class="nav__menu-item margin-right-100px" href="kryuchok.html">Крючок</a></li>
-                <li><a class="nav__menu-item margin-right-100px" href="ruki.html">Руки</a></li>
-            </ul>
-            <form class="nav__box-search margin-right-100px" action="#">
-                <input class="nav__search " placeholder="Поиск" type="search">
-                <button class="nav__btn-search">
-                    <img src="./icons/lupa.svg" alt="">
-                </button>
-            </form>
-            <a class="nav__entry" href="#">Войти</a>
-        </nav>
-    </header>
+<!-- Header -->
+<?php require 'header.php'; ?>
 
     <!-- Основные секции -->
     <main>
@@ -70,8 +21,8 @@
                 <nav class="nav-breadcrumb padding-top-40px margin-bottom-20px">
                     <ol class="breadcrumb">
                         <li class="breadcrumb__item breadcrumb__without-sign margin-right-10px"><a
-                                href="index.html">Главная страница</a></li>
-                        <li class="breadcrumb__item margin-right-10px"><a href="Dlya-nachinayushchikh.html">Для
+                                href="index.php">Главная страница</a></li>
+                        <li class="breadcrumb__item margin-right-10px"><a href="Dlya-nachinayushchikh.php">Для
                                 начинающих</a></li>
                         <li class="breadcrumb__item">Крючок</li>
                     </ol>
@@ -80,15 +31,15 @@
                 <h1 class="first-title margin-bottom-40px">Для начинающих</h1>
                 <!-- Карточки -->
                 <div class="wrapper-cards margin-bottom-20px">
-                    <a href="spitsy.html" class="card">
+                    <a href="spitsy.php" class="card">
                         <img class="card__photo card__photo_mini" src="./img/spitsy.png" alt="photo-1">
                         <h2 class="card__title card__title_upper">Спицы</h2>
                     </a>
-                    <a href="kryuchok.html" class="card">
+                    <a href="kryuchok.php" class="card">
                         <img class="card__photo card__photo_mini" src="./img/kruchok.png" alt="photo-1">
                         <h2 class="card__title card__title_upper">Крючок</h2>
                     </a>
-                    <a href="ruki.html" class="card">
+                    <a href="ruki.php" class="card">
                         <img class="card__photo card__photo_mini" src="./img/ruki.png" alt="photo-1">
                         <h2 class="card__title card__title_upper">Руки</h2>
                     </a>
@@ -200,47 +151,6 @@
 
     </main>
 
-
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer-logo">
-                <a href="index.html"><img class="footer-logo__logo" src="./icons/new-logo-footer-vector.svg" alt=""></a>
-                <p class="footer-logo__description">Сайт для тех, кто любит вязать <br> или хочет научиться этому
-                </p>
-                <p class="footer-logo__year">2023</p>
-            </div>
-            <div class="info">
-                <h6 class="footer-title margin-bottom-30px padding-top-34px">Информация</h6>
-                <ul class="info__footer-menu">
-                    <li><a class="info__footer-item" href="#">Спица</a></li>
-                    <li><a class="info__footer-item" href="#">Крючок</a></li>
-                    <li><a class="info__footer-item" href="#">Руки</a></li>
-                    <li><a class="info__footer-item" href="#">Для начинающих</a></li>
-                    <li><a class="info__footer-item" href="#">Для опытных</a></li>
-                    <li><a class="info__footer-item" href="#">Мастер - классы</a></li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <h6 class="footer-title margin-bottom-30px padding-top-34px">Контакты</h6>
-                <ul class="contacts__list">
-                    <li class="contacts__item margin-bottom-20px"><img class="contacts__footer-icon"
-                            src="./icons/footer-phone.svg" alt="">8 (812) 888 88 88</li>
-                    <li class="contacts__item"><img class="contacts__footer-icon" src="./icons/footer-mail.svg"
-                            alt="">neznay@mail.ru</li>
-                </ul>
-            </div>
-            <div class="social-media">
-                <h6 class="footer-title margin-bottom-30px padding-top-34px">Соцсети</h6>
-                <a href="#"><img class="social-media__footer-vk" src="./icons/vk.svg" alt="vk"></a>
-                <a href="#"><img class="social-media__footer-tel" src="./icons/tel.svg" alt="tel"></a>
-            </div>
-        </div>
-    </footer>
-
-
-</body>
-
-</html>
+    
+<!-- Footer -->
+<?php require 'footer.php'; ?>
