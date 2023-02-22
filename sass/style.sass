@@ -1,0 +1,672 @@
+// переменные
+
+$color-black: #000000
+$color-white: #ffffff
+$color-beige: #F0EDE7
+$color-gray: rgb(166, 161, 155)
+$color-gray-dark: #7A7A78
+$color-red-link: rgb(221, 49, 59)
+$color-green-dark: #404E4A
+$color-green-light: #708B85
+$color-bg-third-title: #63827B
+$color-calculator: #A6A19B
+$color-popup: #E8E3DA
+$color-popup-title1: #95AFA9 
+$color-popup-title2: #4C615C
+$color-error-border: #638272
+$color-popup-bg: #12111159
+
+//базовые настройки
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    font-family: 'Ubuntu'
+    font-weight: 400
+    background: $color-beige
+
+// утилиты
+
+.margin-right-100px
+    margin-right: 10rem
+
+.margin-right-10px
+    margin-right: 1rem
+
+.margin-bottom-80px
+    margin-bottom: 8rem
+
+.margin-bottom-65px
+    margin-bottom: 6.5rem
+
+.margin-bottom-40px
+    margin-bottom: 4rem
+
+.margin-bottom-36px
+    margin-bottom: 3.6rem 
+
+.margin-bottom-30px
+    margin-bottom: 3rem
+
+.margin-bottom-20px
+    margin-bottom: 2rem
+
+.margin-bottom-18px
+    margin-bottom: 1.8rem
+
+.margin-bottom-15px
+    margin-bottom: 1.5rem
+
+.margin-bottom-12px
+    margin-bottom: 1.2rem    
+
+.padding-bottom-80px
+    padding-bottom: 8rem
+
+.padding-top-90px
+    padding-top: 9rem
+
+.padding-top-80px
+    padding-top: 8rem
+
+.padding-top-40px
+    padding-top: 4rem
+
+.padding-top-30px
+    padding-top: 3rem
+
+.padding-top-12px
+    padding-top: 1.2rem
+
+.padding-top-34px
+    padding-top: 3.4rem
+
+.padding-left-13px
+    padding-left: 1.3rem
+
+.pointer
+    cursor: pointer
+
+// основной код
+
+
+// Растение на фоне
+.planet-bg
+    position: absolute
+    z-index: 0
+    &_small
+        height: 44.3rem
+
+
+.container
+    position: relative
+    width: 114rem
+    margin: 0 auto
+    text-align: center
+    z-index: 1
+
+.section-main
+    background: $color-beige
+    position: relative
+    &__planet-bg
+        height: 60.9rem
+        position: absolute
+        top: 0
+        left: 0
+
+.nav
+    position: relative
+    z-index: 2
+    background: $color-white
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 4.4rem
+    &__logo
+        width: 12.6rem
+        padding-top: .8rem
+    &__menu
+        list-style-type: none
+        display: flex
+    &__menu-item
+        display: inline-block
+        text-decoration: none
+        color: $color-black
+        font-size: 2rem
+    &__box-search
+        display: flex
+    &__search
+        width: 24.9rem
+        height: 3.3rem
+        background: $color-white
+        border: .1rem solid $color-green-dark
+        border-radius: 1rem 0 0 1rem
+        padding-left: 2.5rem
+        &:focus
+            outline: none
+    &__btn-search
+        text-align: center
+        text-decoration: none
+        display: inline-block
+        width: 4.4rem
+        height: 3.3rem
+        background: $color-gray-dark
+        border: .1rem solid $color-green-dark
+        border-left: none
+        border-radius: 0 1rem 1rem 0
+    &__entry
+        text-decoration: none
+        color: $color-black
+        font-size: 2rem
+        cursor: pointer
+
+.icon-search
+    padding-top: .5rem
+    font-size: 2.2rem
+    color: $color-white
+
+.first-title
+    font-weight: 500
+    font-size: 3rem
+    &_left
+        text-align: left
+
+.card
+    display: inline-block
+    position: relative
+    
+    &__photo
+        width: 36.6rem
+            
+    &__title
+        padding: 1.8rem 8.1rem
+        border-radius: 0 0 1rem 1rem
+        width: 100%
+        color: $color-white
+        background: rgba(18, 17, 17, 0.42)
+        font-weight: 500
+        font-size: 2.4rem
+        position: absolute
+        top: 46.1rem
+        transition: .3s all
+        &_upper
+            top: 10.1rem
+    &:hover &__title
+        background: $color-green-light
+    &:active &__title
+        border: .5rem solid $color-white
+        padding: 1.8rem 6rem
+        
+            
+
+.wrapper-cards
+    display: flex
+    justify-content: space-between
+
+.wrapper-text
+    display: flex
+    justify-content: space-around
+
+.text
+    color: rgba($color-black, 0.6)
+    font-size: 1.6rem
+    width: 31.7rem
+    text-align: left
+
+.with-title-bg
+    display: flex
+    align-items: center
+    height: 25.7rem
+    background: rgba($color-black, .9) url('../img/yarn-background.png') center / cover no-repeat
+
+.third-title
+    text-align: center
+    color: $color-white
+    font-weight: 500
+    &__title-top
+        display: inline-block
+        font-size: 3rem
+    &__title-bottom
+        display: inline-block
+        font-size: 2.4rem
+
+.books
+    padding-top: 6rem
+    min-height: 50rem
+    background: rgba($color-gray, 0.7)
+    &__container
+        display: flex
+        justify-content: space-between
+
+.right-wrapper
+    display: flex
+
+.book-1
+    padding: 3.4rem 2rem
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $color-white
+    max-width: 65.7rem
+    min-height: 37.8rem
+    border-radius: 1rem
+
+.book-photo
+    margin-right: 4.5rem
+
+.block-with-text
+    text-align: left
+    &__name-book
+        font-weight: 500
+        font-size: 1.6rem
+    &__rating
+        font-size: 1.6rem
+        margin-bottom: 1rem
+    &__description
+        font-size: 1.6rem
+        text-align-last: left
+    &__link
+
+        display: flex
+        justify-content: end
+        color: $color-black
+        text-decoration: none
+        font-weight: 500
+        font-size: 1.5rem
+        color: rgba($color-red-link, 0.56)
+
+.book-2
+    padding: 2.2rem 2rem
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $color-white
+    max-width: 46.3rem
+    min-height: 17.8rem
+    border-radius: 1rem
+
+.book-3
+    padding: 2.2rem 2rem
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $color-white
+    max-width: 46.3rem
+    min-height: 17.8rem
+    border-radius: 1rem
+
+.section-new
+    background: $color-white
+    min-height: 56.2rem
+
+.video-cards
+    display: flex
+    justify-content: space-between
+
+.btn-show-more
+    width: 17.4rem
+    height: 5.8rem
+    background: $color-gray-dark
+    box-shadow: 0rem .2rem .4rem rgba($color-black, 0.25)
+    border-radius: 1rem
+    border: none
+    color: $color-white
+    font-size: 1.6rem
+    font-weight: 500
+    margin-bottom: 4rem
+
+.footer
+    min-height: 34.2rem
+    background: rgba($color-black, 0.52)
+    &__container
+        display: flex
+        justify-content: space-between
+
+.footer-logo
+    padding-top: .9rem
+    text-align: left
+    &__logo
+        width: 12.6rem
+        margin-bottom: 1.4rem
+    &__description
+        color: $color-white
+        font-size: 2rem
+        margin-bottom: 10rem
+    &__year
+        color: $color-white
+        font-size: 2.4rem
+
+.footer-title
+    color: $color-white
+    text-align: left
+    font-size: 2rem
+    font-weight: 500
+
+.info
+    &__footer-menu
+        text-align: left
+        list-style-type: none
+    &__footer-item
+        text-decoration: none
+        color: $color-white
+        font-size: 2rem
+    li
+        margin-bottom: 1.3rem
+        &:last-child
+            margin-bottom: 0
+
+.contacts
+    &__list
+        list-style-type: none
+    &__item
+        font-size: 1.6rem
+        color: $color-white
+        display: flex
+
+    &__footer-icon
+        margin-right: 1.6rem
+
+.social-media
+    &__footer-vk
+        margin-right: 2rem
+
+
+// Хлебные корочки
+.breadcrumb
+    list-style: none
+    display: flex
+    &__item
+        color: #00000070
+        font-size: 1.5rem
+        font-weight: 500
+        &::before
+            content: ">"
+            margin-right: 1rem
+    a
+        text-decoration: none
+        color: #00000070
+    &__without-sign::before
+            content: normal
+.nav-breadcrumb
+    position: relative
+    z-index: 2
+
+// Статьи
+.articles
+    position: relative
+    background: $color-white
+    min-height: 170rem
+    overflow: hidden
+    &__planet-bg-1
+        height: 62.5rem
+        position: absolute
+        top: -10rem
+        right: -20rem
+    &__planet-bg-2
+        height: 62.5rem
+        position: absolute
+        top: 35rem
+        left: -1rem
+        &_kryuchok
+            top: 42rem
+            left: -1rem
+
+.second-title
+    font-weight: 500
+    font-size: 3rem
+    display: flex
+    align-items: center
+    &_left
+        text-align: left
+
+.second-text
+    font-size: 2rem
+    text-align: left
+
+.block-with-content
+    text-align: left
+    margin-bottom: 4rem
+    &__third-title
+        display: inline-block
+        background: $color-bg-third-title
+        color: $color-white
+        font-size: 3rem
+        font-weight: 500
+        text-align: left
+        padding: 1.3rem 4rem
+        border-radius: 1rem
+    &:last-child
+        margin-bottom: 0
+        // временное решение !!!!!!
+        padding-bottom: 6rem
+
+.wrapper
+    display: flex
+    justify-content: space-between
+    &__text
+        display: block
+        background: $color-beige
+        font-size: 2rem
+        padding: 2.4rem 2.4rem 0 2.4rem 
+        border-radius: 1rem
+        min-height: 32.6rem
+        width: 56rem
+        ul
+            padding-left: 3.3rem
+        a
+            color: #6CA1DE
+            text-decoration: none
+    &__img
+        min-height: 32.6rem
+
+// Калькулятор кнопка
+.calculator-follows
+    position: fixed
+    z-index: 2
+    top: 9rem
+    right: 0
+    width: 5.3rem
+    height: 21.4rem
+    text-decoration: none
+    &__text
+        color: $color-white
+        font-size: 2.4rem
+        writing-mode: vertical-lr
+        transform: rotate(180deg)
+        background: $color-calculator
+        padding: 3.2rem 1.2rem
+        border-radius: 0 1rem 1rem 0
+
+// Регистрация и Вход
+.test-section
+    min-height: 100rem
+
+.popup-bg
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 5
+    background: $color-popup-bg
+    display: none
+
+.registration-popup
+    z-index: 6
+    padding: 2.4rem
+    position: absolute
+    height: 65.5rem
+    width: 49rem
+    border-radius: 1rem
+    background: $color-popup
+    top: 5.6rem
+    right: 0
+    display: none
+    
+    &__planet
+        position: absolute
+        top: 0
+        right: 0
+    &__wrapper
+        position: relative
+        padding: 4rem 6.2rem 0 6.2rem
+        height: 60.7rem
+        width: 44.2rem
+        background: rgba(254, 254, 251, 0.35)
+        backdrop-filter: blur(6px)
+        border-radius: 1rem
+    &__exit
+        cursor: pointer
+        position: absolute
+        top: 1rem
+        right: .9rem
+        margin-bottom: .6rem
+
+.title
+    display: flex
+    justify-content: center
+    &__authorization
+        font-size: 2.6rem
+        color: $color-white
+        background: $color-popup-title1
+        padding: 1.25rem 3.2rem
+        border-radius: 1rem 0 0 1rem  
+        font-weight: 400
+        cursor: pointer
+        &_activated
+            color: $color-popup-title2
+            background: $color-white
+            border: 1px solid $color-popup-title2
+    &__registration
+        font-size: 2.6rem
+        color: $color-popup-title2
+        background: $color-white
+        padding: 1.25rem 2rem
+        border-radius: 0 1rem 1rem 0
+        border: 1px solid $color-popup-title2
+        font-weight: 400
+        cursor: pointer
+        &_deactivated
+            color: $color-white
+            background: $color-popup-title1
+            border: none
+        &_password-recovery
+            border: none
+            border-radius: 1rem
+            padding: 1.25rem 1rem
+
+.form
+    display: flex
+    flex-direction: column
+    &__text
+        font-size: 2rem
+        color: $color-black
+    &__text2
+        font-size: 1.3rem
+        color: $color-black
+    &__text3
+        font-size: 1.5rem
+        color: $color-black
+    &__input
+        border: none
+        border-radius: 1rem
+        background: $color-white
+        width: 31.8rem
+        height: 5.5rem
+        font-size: 2rem
+        padding-left: 1.6rem
+    &__checkbox
+        border: none
+        margin-right: .8rem
+    &__wrapp
+        display: flex
+        justify-content: space-between
+    &__btn
+        color: $color-white
+        font-size: 2.6rem
+        background: $color-popup-title1
+        padding: 1.25rem 3.35rem
+        border: none
+        border-radius: 1rem
+        cursor: pointer
+        &_authorization
+            width: 12rem
+            height: 5.5rem
+            padding: 1.25rem 2.2rem
+            margin-right: auto
+            margin-left: auto 
+        &_send
+            width: 20.9rem
+            height: 5.5rem
+            padding: 1.25rem 3.85rem
+            margin-right: auto
+            margin-left: auto 
+    &__img
+        height: 4.8rem
+    &__icon-wrapper
+        text-align: center
+    &__icon
+        display: inline-block
+        margin-right: 1.7rem
+        &:last-child
+            margin-right: 0
+
+.active-second
+    display: block
+
+.active
+    display: block
+    animation: popup 0.5s ease-out
+
+@keyframes popup
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+    
+
+// Секция ERROR 404
+.section-error
+    min-height: 95.4rem
+    background: $color-beige
+    &__wrapper
+        min-height: 59.5rem
+        width: 95rem
+        border: .3rem solid $color-error-border
+        border-radius: 1rem
+        margin: 0 auto
+    &__img
+        min-height: 18.4rem
+        width: 31.3rem
+    &__title
+        color: $color-black
+        font-size: 3.2rem
+        font-weight: 400
+    &__text
+        color: $color-black
+        font-size: 2rem
+
+.btn-wrapper
+    &__btn
+        display: inline-block
+        width: 12.7rem
+        text-decoration: none
+        color: $color-white
+        background: $color-gray-dark
+        border: .1rem solid $color-black
+        border-radius: 1rem
+        padding: 1.4rem 0
+        font-size: 2rem
+        margin-right: 7.3rem
+        transition: .5s all
+        &:last-child
+            margin-right: 0
+        &:hover
+            background: $color-bg-third-title
+            
