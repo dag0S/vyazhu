@@ -398,6 +398,30 @@ body {
   color: #ffffff;
 }
 
+.single {
+  min-height: 100rem;
+  padding-bottom: 1rem;
+}
+.single__title {
+  color: #000000;
+  text-align-last: left;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.single__video {
+  width: 114rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.single__text {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: #708B85;
+  border-radius: 1rem;
+  padding: 0.9rem 1.4rem;
+}
+
 .btn-show-more {
   width: 17.4rem;
   height: 5.8rem;
