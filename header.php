@@ -33,21 +33,23 @@
 <body>
     <!-- Header Nav -->
     <header class="header padding-top-12px">
-        <nav class="nav">
-            <a href="index.php"><img class="nav__logo margin-right-100px" src="./icons/new-logo-vector.svg" alt=""></a>
-            <ul class="nav__menu">
-                <li><a class="nav__menu-item margin-right-100px" href="spitsy.php">Спицы</a></li>
-                <li><a class="nav__menu-item margin-right-100px" href="kryuchok.php">Крючок</a></li>
-                <li><a class="nav__menu-item margin-right-100px" href="ruki.php">Руки</a></li>
-            </ul>
-            <form class="nav__box-search margin-right-100px" action="#">
-                <input class="nav__search " placeholder="Поиск" type="search">
-                <button class="nav__btn-search">
-                    <img src="./icons/lupa.svg" alt="">
-                </button>
-            </form>
-            <p class="nav__entry">Войти</p>
-        </nav>
+        <div class="while">
+            <nav class="nav container">
+                <a href="index.php"><img class="nav__logo" src="./icons/new-logo-vector.svg" alt=""></a>
+                <ul class="nav__menu">
+                    <li><a class="nav__menu-item margin-right-100px" href="spitsy.php">Спицы</a></li>
+                    <li><a class="nav__menu-item margin-right-100px" href="kryuchok.php">Крючок</a></li>
+                    <li><a class="nav__menu-item" href="ruki.php">Руки</a></li>
+                </ul>
+                <form class="nav__box-search" action="#">
+                    <input class="nav__search " placeholder="Поиск" type="search">
+                    <button class="nav__btn-search">
+                        <img src="./icons/lupa.svg" alt="">
+                    </button>
+                </form>
+                <p class="nav__entry">Войти</p>
+            </nav>
+        </div>
 
         <!-- Темный фон popup'а -->
         <div class="popup-bg"></div>

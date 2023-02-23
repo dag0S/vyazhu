@@ -102,6 +102,10 @@ body {
   height: 44.3rem;
 }
 
+.while {
+  background: #ffffff;
+}
+
 .container {
   position: relative;
   width: 114rem;
@@ -126,7 +130,7 @@ body {
   z-index: 2;
   background: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 4.4rem;
 }
@@ -335,7 +339,7 @@ body {
   border-radius: 1rem;
 }
 
-.section-new {
+.section-videos {
   background: #ffffff;
   min-height: 56.2rem;
 }
@@ -343,6 +347,54 @@ body {
 .video-cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.video-card__link {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+.video-card__wrapper-preview {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56rem;
+  height: 32.6rem;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+}
+.video-card__triangle {
+  height: 5.4rem;
+  width: 5.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-card__img {
+  width: 54.4rem;
+  height: 31rem;
+  border-radius: 1rem;
+}
+.video-card__wrapper-text {
+  width: 56rem;
+  height: 8.8rem;
+  background: #708B85;
+  border-radius: 1rem;
+  padding: 0.9rem 1.4rem;
+}
+.video-card__title {
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.video-card__text {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .btn-show-more {

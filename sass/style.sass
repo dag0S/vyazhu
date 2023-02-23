@@ -102,6 +102,9 @@ body
     &_small
         height: 44.3rem
 
+.while
+    background: $color-white
+
 .container
     position: relative
     width: 114rem
@@ -123,7 +126,7 @@ body
     z-index: 2
     background: $color-white
     display: flex
-    justify-content: center
+    justify-content: space-between
     align-items: center
     height: 4.4rem
     &__logo
@@ -298,13 +301,56 @@ body
     min-height: 17.8rem
     border-radius: 1rem
 
-.section-new
+// Секция с видео
+.section-videos
     background: $color-white
     min-height: 56.2rem
 
 .video-cards
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
+
+.video-card
+    &__link
+        display: inline-block
+        margin-bottom: .8rem
+    &__wrapper-preview
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 56rem
+        height: 32.6rem
+        border: 1px solid $color-black
+        border-radius: 1rem
+    &__triangle
+        height: 5.4rem
+        width: 5.4rem
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__img
+        width: 54.4rem
+        height: 31rem
+        border-radius: 1rem
+    &__wrapper-text
+        width: 56rem
+        height: 8.8rem
+        background: $color-green-light
+        border-radius: 1rem
+        padding: .9rem 1.4rem
+    &__title
+        text-align: left
+        font-size: 1.7rem
+        font-weight: 500
+        color: $color-white
+        margin-bottom: .5rem
+    &__text
+        text-align: left
+        font-size: 1.5rem
+        color: $color-white
 
 .btn-show-more
     width: 17.4rem
@@ -318,6 +364,7 @@ body
     font-weight: 500
     margin-bottom: 4rem
 
+// Footer
 .footer
     min-height: 34.2rem
     background: rgba($color-black, 0.52)

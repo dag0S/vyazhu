@@ -13,7 +13,7 @@
                 <h1 class="first-title margin-bottom-40px padding-top-80px">Выберите интересующий вас раздел</h1>
                 <!-- Карточки -->
                 <div class="wrapper-cards margin-bottom-20px">
-                    <a href="Dlya-nachinayushchikh.php" class="card">
+                    <a href="dlya-nachinayushchikh.php" class="card">
                         <img class="card__photo" src="./img/photo-1.png" alt="photo-1">
                         <h2 class="card__title">Для начинающих</h2>
                     </a>
@@ -100,15 +100,55 @@
         </section>
 
         <!-- Секция с видео -->
-        <section class="section-new">
+        <section class="section-videos">
             <div class="container">
                 <h5 class="first-title first-title_left margin-bottom-40px padding-top-80px">Новинки</h5>
-                <div class="video-cards margin-bottom-40px">
-                    <a class="video-cards__link" href="#"><img src="./img/video-card.png" alt=""></a>
-                    <a class="video-cards__link" href="#"><img src="./img/video-card.png" alt=""></a>
-                    <a class="video-cards__link" href="#"><img src="./img/video-card.png" alt=""></a>
-                    <a class="video-cards__link" href="#"><img src="./img/video-card.png" alt=""></a>
+
+                <div class="video-cards">
+
+                    <div class="video-card margin-bottom-40px">
+                        <a class="video-card__link" href="#" >
+                            <div class="video-card__wrapper-preview">
+                                <img class="video-card__triangle" src="./icons/btn-play.svg" alt="play">
+                                <img class="video-card__img" src="./img/video-1.png" alt="">
+                            </div>
+                        </a>
+                        <div class="video-card__wrapper-text">
+                            <h3 class="video-card__title">Набор петель</h3>
+                            <p class="video-card__text">Вязание спицами, как и любой другой вид этого искусства, начинается с набора петель. Вам потребуется две спицы, нитки, и конечно, желание!</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card margin-bottom-40px">
+                        <a class="video-card__link" href="#" >
+                            <div class="video-card__wrapper-preview">
+                                <img class="video-card__triangle" src="./icons/btn-play.svg" alt="play">
+                                <img class="video-card__img" src="./img/video-1.png" alt="">
+                            </div>
+                        </a>
+                        <div class="video-card__wrapper-text">
+                            <h3 class="video-card__title">Набор петель</h3>
+                            <p class="video-card__text">Вязание спицами, как и любой другой вид этого искусства, начинается с набора петель. Вам потребуется две спицы, нитки, и конечно, желание!</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card margin-bottom-40px">
+                        <a class="video-card__link" href="#" >
+                            <div class="video-card__wrapper-preview">
+                                <img class="video-card__triangle" src="./icons/btn-play.svg" alt="play">
+                                <img class="video-card__img" src="./img/video-1.png" alt="">
+                            </div>
+                        </a>
+                        <div class="video-card__wrapper-text">
+                            <h3 class="video-card__title">Набор петель</h3>
+                            <p class="video-card__text">Вязание спицами, как и любой другой вид этого искусства, начинается с набора петель. Вам потребуется две спицы, нитки, и конечно, желание!</p>
+                        </div>
+                    </div>
+
+
                 </div>
+
+
                 <form action="#">
                     <button class="btn-show-more">Показать ещё</button>
                 </form>
