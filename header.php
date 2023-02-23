@@ -1,3 +1,6 @@
+<!-- DataBase -->
+<?php require 'bd.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
