@@ -22,7 +22,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb__item breadcrumb__without-sign margin-right-10px"><a
                                 href="index.php">Главная страница</a></li>
-                        <li class="breadcrumb__item margin-right-10px"><a href="Dlya-nachinayushchikh.php">Для
+                        <li class="breadcrumb__item margin-right-10px"><a href="dlya-nachinayushchikh.php">Для
                                 начинающих</a></li>
                         <li class="breadcrumb__item">Крючок</li>
                     </ol>

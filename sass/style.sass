@@ -11,7 +11,7 @@ $color-green-light: #708B85
 $color-bg-third-title: #63827B
 $color-calculator: #A6A19B
 $color-popup: #E8E3DA
-$color-popup-title1: #95AFA9 
+$color-popup-title1: #95AFA9
 $color-popup-title2: #4C615C
 $color-error-border: #638272
 $color-popup-bg: #12111159
@@ -49,7 +49,7 @@ body
     margin-bottom: 4rem
 
 .margin-bottom-36px
-    margin-bottom: 3.6rem 
+    margin-bottom: 3.6rem
 
 .margin-bottom-30px
     margin-bottom: 3rem
@@ -64,7 +64,7 @@ body
     margin-bottom: 1.5rem
 
 .margin-bottom-12px
-    margin-bottom: 1.2rem    
+    margin-bottom: 1.2rem
 
 .padding-bottom-80px
     padding-bottom: 8rem
@@ -95,14 +95,12 @@ body
 
 // основной код
 
-
 // Растение на фоне
 .planet-bg
     position: absolute
     z-index: 0
     &_small
         height: 44.3rem
-
 
 .container
     position: relative
@@ -180,10 +178,10 @@ body
 .card
     display: inline-block
     position: relative
-    
+
     &__photo
         width: 36.6rem
-            
+
     &__title
         padding: 1.8rem 8.1rem
         border-radius: 0 0 1rem 1rem
@@ -202,8 +200,6 @@ body
     &:active &__title
         border: .5rem solid $color-white
         padding: 1.8rem 6rem
-        
-            
 
 .wrapper-cards
     display: flex
@@ -229,11 +225,12 @@ body
     text-align: center
     color: $color-white
     font-weight: 500
+    margin: 0 auto
     &__title-top
-        display: inline-block
+        display: block
         font-size: 3rem
     &__title-bottom
-        display: inline-block
+        display: block
         font-size: 2.4rem
 
 .books
@@ -376,7 +373,6 @@ body
     &__footer-vk
         margin-right: 2rem
 
-
 // Хлебные корочки
 .breadcrumb
     list-style: none
@@ -392,7 +388,7 @@ body
         text-decoration: none
         color: #00000070
     &__without-sign::before
-            content: normal
+        content: normal
 .nav-breadcrumb
     position: relative
     z-index: 2
@@ -453,7 +449,7 @@ body
         display: block
         background: $color-beige
         font-size: 2rem
-        padding: 2.4rem 2.4rem 0 2.4rem 
+        padding: 2.4rem 2.4rem 0 2.4rem
         border-radius: 1rem
         min-height: 32.6rem
         width: 56rem
@@ -508,7 +504,7 @@ body
     top: 5.6rem
     right: 0
     display: none
-    
+
     &__planet
         position: absolute
         top: 0
@@ -536,7 +532,7 @@ body
         color: $color-white
         background: $color-popup-title1
         padding: 1.25rem 3.2rem
-        border-radius: 1rem 0 0 1rem  
+        border-radius: 1rem 0 0 1rem
         font-weight: 400
         cursor: pointer
         &_activated
@@ -600,13 +596,13 @@ body
             height: 5.5rem
             padding: 1.25rem 2.2rem
             margin-right: auto
-            margin-left: auto 
+            margin-left: auto
         &_send
             width: 20.9rem
             height: 5.5rem
             padding: 1.25rem 3.85rem
             margin-right: auto
-            margin-left: auto 
+            margin-left: auto
     &__img
         height: 4.8rem
     &__icon-wrapper
@@ -629,7 +625,6 @@ body
         opacity: 0
     100%
         opacity: 1
-    
 
 // Секция ERROR 404
 .section-error
@@ -669,4 +664,3 @@ body
             margin-right: 0
         &:hover
             background: $color-bg-third-title
-            

@@ -248,13 +248,14 @@ body {
   text-align: center;
   color: #ffffff;
   font-weight: 500;
+  margin: 0 auto;
 }
 .third-title__title-top {
-  display: inline-block;
+  display: block;
   font-size: 3rem;
 }
 .third-title__title-bottom {
-  display: inline-block;
+  display: block;
   font-size: 2.4rem;
 }
 
