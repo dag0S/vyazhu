@@ -36,6 +36,7 @@
 <body>
     <!-- Header Nav -->
     <header class="header padding-top-12px">
+
         <div class="while">
             <nav class="nav container">
                 <a href="index.php"><img class="nav__logo" src="./icons/new-logo-vector.svg" alt=""></a>
@@ -47,14 +48,22 @@
                 <form class="nav__box-search" action="#">
                     <input class="nav__search " placeholder="Поиск" type="search">
                     <button class="nav__btn-search">
-                        <img src="./icons/lupa.svg" alt="">
+                        <img class="nav__lupa" src="./icons/lupa.svg" alt="lupa">
                     </button>
                 </form>
                 <a class="nav__entry" href="#popup">Войти</a>
+        
+                <!-- Гамбургер меню -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
 
     <!-- Popup -->
     <?php require 'popup.php'; ?>
+
 
     </header>

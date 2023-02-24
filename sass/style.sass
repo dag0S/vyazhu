@@ -100,7 +100,11 @@ body
     position: absolute
     z-index: 0
     &_small
+        position: absolute
+        top: 1rem
+        left: 0
         height: 44.3rem
+        
 
 .while
     background: $color-white
@@ -120,6 +124,11 @@ body
         position: absolute
         top: 0
         left: 0
+
+.hamburger
+    display: none
+
+
 
 .nav
     position: relative
@@ -149,6 +158,7 @@ body
         border: .1rem solid $color-green-dark
         border-radius: 1rem 0 0 1rem
         padding-left: 2.5rem
+        font-size: 2rem
         &:focus
             outline: none
     &__btn-search
@@ -166,6 +176,11 @@ body
         color: $color-black
         font-size: 2rem
         cursor: pointer
+    &__lupa
+        width: 2rem
+        height: 2rem
+    &__space
+        display: none
 
 .icon-search
     padding-top: .5rem
@@ -217,6 +232,7 @@ body
     font-size: 1.6rem
     width: 31.7rem
     text-align: left
+    background: $color-beige
 
 .with-title-bg
     display: flex
@@ -253,12 +269,21 @@ body
     justify-content: center
     align-items: center
     background: $color-white
-    max-width: 65.7rem
+    width: 65.7rem
     min-height: 37.8rem
     border-radius: 1rem
 
-.book-photo
+.book-photo-1
     margin-right: 4.5rem
+    width: 24.8rem
+
+.book-photo-2
+    margin-right: 4.5rem
+    width: 10.8rem
+
+.book-photo-3
+    margin-right: 4.5rem
+    width: 10.8rem
 
 .block-with-text
     text-align: left
@@ -287,7 +312,7 @@ body
     justify-content: center
     align-items: center
     background: $color-white
-    max-width: 46.3rem
+    width: 46.3rem
     min-height: 17.8rem
     border-radius: 1rem
 
@@ -297,7 +322,7 @@ body
     justify-content: center
     align-items: center
     background: $color-white
-    max-width: 46.3rem
+    width: 46.3rem
     min-height: 17.8rem
     border-radius: 1rem
 
@@ -528,7 +553,7 @@ body
             color: #6CA1DE
             text-decoration: none
     &__img
-        min-height: 32.6rem
+        height: 32.6rem
 
 // Калькулятор кнопка
 .calculator-follows
@@ -582,14 +607,16 @@ body
     width: 49rem
     border-radius: 1rem
     background: $color-popup
-    top: 5.6rem
-    right: 0
+    top: 1rem
+    right: 1rem
     display: none
 
     &__planet
         position: absolute
         top: 0
         right: 0
+        width: 29.8rem
+        height: 65.5rem
     &__wrapper
         position: relative
         padding: 4rem 6.2rem 0 6.2rem
@@ -599,6 +626,7 @@ body
         backdrop-filter: blur(6px)
         border-radius: 1rem
     &__exit
+        height: 2.4rem
         cursor: pointer
         position: absolute
         top: 1rem
@@ -698,19 +726,6 @@ body
 .authorization
     display: block
 
-// .active-second
-//     display: block
-
-// .active
-//     display: block
-//     animation: popup 0.5s ease-out
-
-// @keyframes popup
-//     0%
-//         opacity: 0
-//     100%
-//         opacity: 1
-
 // Секция ERROR 404
 .section-error
     min-height: 95.4rem
@@ -749,3 +764,6 @@ body
             margin-right: 0
         &:hover
             background: $color-bg-third-title
+
+// Медиа запросы для Адаптивного Дизайна
+@import "_media-queries.sass"

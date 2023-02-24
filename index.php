@@ -57,7 +57,7 @@
                 <div class="container books__container">
                     <div class="right-wrapper">
                         <div class="book-1">
-                            <img class="book-photo" src="./img/book-1.png" alt="book-1">
+                            <img class="book-photo-1" src="./img/book-1.png" alt="book-1">
                             <div class="block-with-text">
                                 <h4 class="block-with-text__name-book">Азбука вязания М. Максимова</h4>
                                 <p class="block-with-text__rating">Рейтинг: 5.0</p>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="left-wrapper">
                         <div class="book-2 margin-bottom-20px">
-                            <img class="book-photo" src="./img/book-2.png" alt="book-1">
+                            <img class="book-photo-2" src="./img/book-3.png" alt="book-1">
                             <div class="block-with-text">
                                 <h4 class="block-with-text__name-book">Вязание без слез Э. Циммерман</h4>
                                 <p class="block-with-text__rating">Рейтинг: 4.9</p>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                         <div class="book-3">
-                            <img class="book-photo" src="./img/book-3.png" alt="book-1">
+                            <img class="book-photo-3" src="./img/book-2.png" alt="book-1">
                             <div class="block-with-text">
                                 <h4 class="block-with-text__name-book">3D Вязание на спицах Т. Перчер</h4>
                                 <p class="block-with-text__rating">Рейтинг: 4.8</p>
