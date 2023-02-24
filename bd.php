@@ -5,7 +5,7 @@ $dbname = "vyazhu_articles";
 $username = "root";
 $password = "";
 
-$db = new PDO("mysql:host=$dbhost; dbname=$dbname", $username, $password);
+$db = new PDO("mysql:host=$dbhost; dbname=$dbname; charset=utf8", $username, $password);
 
 // Получение всех статей
 function get_videocards_all() {

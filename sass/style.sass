@@ -560,7 +560,19 @@ body
     left: 0
     z-index: 5
     background: $color-popup-bg
-    display: none
+    // display: none
+    transition: opacity .1s
+    opacity: 0
+    visibility: hidden
+    &:target
+        opacity: 1
+        visibility: visible
+    &__area
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
 
 .registration-popup
     z-index: 6
@@ -592,6 +604,7 @@ body
         top: 1rem
         right: .9rem
         margin-bottom: .6rem
+        transition: all .5s
 
 .title
     display: flex
@@ -682,18 +695,21 @@ body
         &:last-child
             margin-right: 0
 
-.active-second
+.authorization
     display: block
 
-.active
-    display: block
-    animation: popup 0.5s ease-out
+// .active-second
+//     display: block
 
-@keyframes popup
-    0%
-        opacity: 0
-    100%
-        opacity: 1
+// .active
+//     display: block
+//     animation: popup 0.5s ease-out
+
+// @keyframes popup
+//     0%
+//         opacity: 0
+//     100%
+//         opacity: 1
 
 // Секция ERROR 404
 .section-error

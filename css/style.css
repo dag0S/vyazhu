@@ -639,7 +639,20 @@ body {
   left: 0;
   z-index: 5;
   background: rgba(18, 17, 17, 0.3490196078);
-  display: none;
+  transition: opacity 0.1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup-bg:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-bg__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .registration-popup {
@@ -674,6 +687,7 @@ body {
   top: 1rem;
   right: 0.9rem;
   margin-bottom: 0.6rem;
+  transition: all 0.5s;
 }
 
 .title {
@@ -785,23 +799,10 @@ body {
   margin-right: 0;
 }
 
-.active-second {
+.authorization {
   display: block;
 }
 
-.active {
-  display: block;
-  animation: popup 0.5s ease-out;
-}
-
-@keyframes popup {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .section-error {
   min-height: 95.4rem;
   background: #F0EDE7;
