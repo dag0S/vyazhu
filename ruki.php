@@ -73,7 +73,7 @@
                 <div class="container">
 
                     <h2 class="second-title second-title_left margin-bottom-36px padding-top-30px">Вязание руками<img
-                            class="padding-left-13px" src="./icons/rukami-icon.svg" alt=""></h2>
+                            class="second-title__icon padding-left-13px" src="./icons/rukami-icon.svg" alt=""></h2>
                     <p class="second-text margin-bottom-40px">Оказывается, что для вязания не обязательно иметь
                         специальный инструмент – спицы или крючок. Создать оригинальную вещь можно без каких-либо
                         аксессуаров за короткий период времени, используя в качестве основного инструмента только

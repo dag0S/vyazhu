@@ -58,7 +58,7 @@
             font-size: 20px
             margin-right: 0
         &__menu
-            // display: none
+            display: none
             flex-direction: column
             justify-content: space-evenly
             align-items: center
@@ -75,8 +75,6 @@
             transform: translateX(381px)
             transition: .6s all
     
-
-
     .nav__menu_active
         display: flex
         opacity: 1
@@ -107,7 +105,6 @@
                 &:nth-child(3)
                     transform: translateY(6px) rotate(45deg)
 
-
     .wrapper-text
         display: none
 
@@ -118,7 +115,12 @@
         &__photo
             width: 175px
         &__title
-            top: 211px
+            padding: 10px 0
+            font-size: 15px
+            top: 213px
+            &_upper
+                top: 41px
+
     .section-main
         &__planet-bg
             height: 300px
@@ -160,9 +162,126 @@
     .video-cards
         justify-content: center
 
+    .nav-breadcrumb
+        display: none
+    
+    .planet-bg_small
+        height: 180px
+
+    .wrapper-cards
+        margin-bottom: 30px
+
+    .wrapper
+        display: flex
+        flex-direction: column-reverse
+        align-items: center
+        &__img
+            width: 458px
+            height: 100%
+            margin-bottom: 10px
+        &__text
+            width: 458px
+            min-height: 130px
+            padding-bottom: 15px
+        
+    .articles
+        &__planet-bg-1
+            height: 350px
+        &__planet-bg-2
+            height: 350px
+        
+    .single__video
+        width: 540px
+
+    .section-error
+        padding-top: 30px
+        &__img
+            padding-top: 30px
+        &__wrapper
+            width: 500px
+            min-height: 360px
+            
+
+
+
 
 @media (max-width: 575px)
     .container
         width: 100%
+
+    .wrapper-cards
+        flex-direction: column
+        align-items: center
+    .card
+        width: 90%
+        &__photo
+            width: 100%
+        &__title
+            width: 100%
+            top: 80%
+            font-size: 25px
+            border-radius: 0
+            &_upper
+                top: 60%
+    
+    .planet-bg_small
+        display: none
+
+    .section-main__planet-bg
+        display: none
+
+    .book-1
+        width: 90%
+    .book-2
+        width: 90%
+    .book-3
+        width: 90%
+    .right-wrapper
+        justify-content: center
+    .left-wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+    .book-photo-1
+        width: 118px
+
+    .video-card
+        width: 90%
+        &__wrapper-text
+            width: 100%
+        &__img
+            width: 98%
+        &__wrapper-preview
+            width: 100%
+    .video-cards
+        flex-direction: column
+        align-items: center
+    
+    .footer
+        &__container
+            justify-content: space-between
+            flex-wrap: wrap
+    
+    .footer-logo
+        width: 206px
+
+    .info
+        width: 150px
+    .social-media
+        width: 150px
+    .nav__search
+        width: 30vw
+
+    .first-title_left
+        text-align: center
+
+    .wrapper
+        &__text
+            width: 95%
+        &__img
+            width: 95%
+    .single__video
+        width: 100%
+    
 
 

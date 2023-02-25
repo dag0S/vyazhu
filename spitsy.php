@@ -73,7 +73,7 @@
             <div class="container">
                 
                 <h2 class="second-title second-title_left margin-bottom-36px padding-top-30px">Спицы<img
-                        class="padding-left-13px" src="./icons/clubok-icon.svg" alt=""></h2>
+                        class="second-title__icon padding-left-13px" src="./icons/clubok-icon.svg" alt=""></h2>
                 <p class="second-text margin-bottom-40px">Как начать вязать спицами? С нами - просто. В этом разделе
                     собраны видеоуроки,
                     которые помогут научиться человеку, впервые взявшему спицы в руки.</p>

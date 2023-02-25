@@ -73,7 +73,7 @@
                 <div class="container">
 
                     <h2 class="second-title second-title_left margin-bottom-36px padding-top-30px">Крючок<img
-                            class="padding-left-13px" src="./icons/kryuchok-icon.svg" alt=""></h2>
+                            class="second-title__icon padding-left-13px" src="./icons/kryuchok-icon.svg" alt=""></h2>
                     <p class="second-text margin-bottom-40px">Полотно, связанное крючком, отличается от полотна,
                         выполненного спицами, потому что оно по другому создается. Главное отличие заключается в том,
                         что полотно связанное на спицах создается за счет переплетения нитей: при вязании мы цепляем
