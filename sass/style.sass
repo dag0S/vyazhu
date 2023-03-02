@@ -104,7 +104,6 @@ body
         top: 1rem
         left: 0
         height: 44.3rem
-        
 
 .while
     background: $color-white
@@ -128,8 +127,6 @@ body
 .hamburger
     display: none
 
-
-
 .nav
     position: relative
     z-index: 2
@@ -147,8 +144,29 @@ body
     &__menu-item
         display: inline-block
         text-decoration: none
-        color: $color-black
+        color: #4C5654
         font-size: 2rem
+        position: relative
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            right: 0
+            bottom: -.3rem
+            width: 0
+            height: .2rem
+            background-color: black
+            transition: width 0.5s
+        &:hover::after
+            content: ""
+            width: 100%
+            display: block
+            position: absolute
+            left: 0
+            bottom: -.3rem
+            height: .2rem
+            background-color: $color-green-light
+            transition: width 0.5s
     &__box-search
         display: flex
     &__search
@@ -173,9 +191,30 @@ body
         border-radius: 0 1rem 1rem 0
     &__entry
         text-decoration: none
-        color: $color-black
+        color: #4C5654
         font-size: 2rem
         cursor: pointer
+        position: relative
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            right: 0
+            bottom: -.3rem
+            width: 0
+            height: .2rem
+            background-color: black
+            transition: width 0.5s
+        &:hover::after
+            content: ""
+            width: 100%
+            display: block
+            position: absolute
+            left: 0
+            bottom: -.3rem
+            height: .2rem
+            background-color: $color-green-light
+            transition: width 0.5s
     &__lupa
         width: 2rem
         height: 2rem
@@ -380,17 +419,29 @@ body
 
 // Шаблон статьи с видео
 .single
+    position: relative
     min-height: 100rem
     padding-bottom: 1rem
+    &__bg-r
+        position: absolute
+        top: 26.2rem
+        right: 0
+        height: 70.9rem
+    &__bg-l
+        position: absolute
+        top: 44rem
+        left: 0
+        height: 63.9rem
     &__title
         color: $color-black
-        text-align-last: left
+        text-align: left
         font-size: 3rem
         font-weight: 500
     &__video
-        width: 114rem
+        width: 100%
+        height: 66.3rem
         border-radius: 1rem
-        margin-bottom: 1rem
+        margin-bottom: 4rem
     &__text
         text-align: left
         font-size: 1.5rem
@@ -398,6 +449,42 @@ body
         background: $color-green-light
         border-radius: 1rem
         padding: .9rem 1.4rem
+    &__wrapp-single
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__link
+        text-decoration: none
+        font-size: 2rem
+        font-weight: 500
+        color: #00000080
+        background: #D9D9D9
+        display: flex
+        justify-content: center
+        width: 16.6rem
+        padding: 1rem 2rem
+        border-radius: 1rem
+    &__icon-link
+        height: 2.4rem
+        padding-left: 2.3rem
+    &__wrapp-single-second
+        display: flex
+        align-items: center
+    &__youtube-icon
+        height: 4rem
+        margin-right: 1.2rem
+    &__text-youtube
+        colot: $color-black
+        font-size: 2rem
+        font-weight: 500
+        margin-right: 1.2rem
+    &__video-author, &__date
+        color: #00000080
+        font-size: 2rem
+        font-weight: 500
+        margin-right: 1.2rem
+    &__point
+        margin-right: 1.2rem
 
 .btn-show-more
     width: 17.4rem
@@ -447,6 +534,27 @@ body
         text-decoration: none
         color: $color-white
         font-size: 2rem
+        position: relative
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            right: 0
+            bottom: -.3rem
+            width: 0
+            height: .2rem
+            background-color: $color-white
+            transition: width 0.5s
+        &:hover::after
+            content: ""
+            width: 100%
+            display: block
+            position: absolute
+            left: 0
+            bottom: -.3rem
+            height: .2rem
+            background-color: $color-white
+            transition: width 0.5s
     li
         margin-bottom: 1.3rem
         &:last-child
@@ -770,6 +878,120 @@ body
             margin-right: 0
         &:hover
             background: $color-bg-third-title
+
+// Секция с видео на стр спицы, руки, крючок
+.section-with-videos
+    min-height: 50rem
+    background: $color-white
+    &__container
+        text-align: left
+        position: relative
+
+.space-between
+    height: 10rem
+    width: 100%
+    &_small
+        height: 4.5rem
+
+// выпадающее меню
+.wrapper-dropdown-3 
+    /* Size and position */
+    position: absolute
+    width: 26.2rem
+    margin: 0 auto
+    padding: 1rem
+
+    /* Styles */
+    background: $color-gray-dark
+    border-radius: 1rem
+    box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25)
+    cursor: pointer
+    outline: none
+
+    /* Font settings */
+    font-weight: 500
+    color: $color-white
+    font-size: 2.4rem
+    padding-left: 2rem
+
+
+.wrapper-dropdown-3:after 
+    content: ""
+    width: 0
+    height: 0
+    position: absolute
+    right: 1.5rem
+    top: 50%
+    margin-top: -.3rem
+    border-width: 1.2rem .8rem 0 .8rem
+    border-style: solid
+    border-color: #D9D9D9 transparent
+
+
+.wrapper-dropdown-3 .dropdown 
+    /* Size & position */
+    position: absolute
+    top: 110%
+    left: 0
+    right: 0
+
+    /* Styles */
+    background: white
+    border-radius: inherit
+    border: .1rem solid $color-popup-title2
+    font-weight: normal
+    -webkit-transition: all 0.5s ease-in
+    -moz-transition: all 0.5s ease-in
+    -ms-transition: all 0.5s ease-in
+    -o-transition: all 0.5s ease-in
+    transition: all 0.5s ease-in
+    list-style: none
+
+    /* Hiding */
+    opacity: 0
+    pointer-events: none
+    z-index: 2
+
+.wrapper-dropdown-3 .dropdown li a 
+    display: block
+    font-weight: 500
+    padding: 1rem
+    text-decoration: none
+    color: $color-popup-title2
+    -webkit-transition: all 0.3s ease-out
+    -moz-transition: all 0.3s ease-out
+    -ms-transition: all 0.3s ease-out
+    -o-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+
+
+.wrapper-dropdown-3 .dropdown li i 
+    float: right
+    color: inherit
+
+
+.wrapper-dropdown-3 .dropdown li:first-of-type a 
+    border-radius: 1rem 1rem 0 0
+
+
+.wrapper-dropdown-3 .dropdown li:last-of-type a 
+    border: none
+    border-radius: 0 0 1rem 1rem
+
+
+/* Hover state */
+
+.wrapper-dropdown-3 .dropdown li:hover a 
+    background: #f3f8f8
+
+
+/* Active state */
+
+.wrapper-dropdown-3.active .dropdown 
+    opacity: 1
+    pointer-events: auto
+
+
 
 // Медиа запросы для Адаптивного Дизайна
 @import "_media-queries.sass"

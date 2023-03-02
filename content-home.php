@@ -14,8 +14,8 @@
                     </div>
                 </a>
                 <div class="video-card__wrapper-text">
-                    <h3 class="video-card__title"><?php echo $videocard["title"]; ?></h3>
-                    <p class="video-card__text"><?php echo $str = mb_substr($videocard["text"], 0, 135); ?> . . .</p>
+                    <h3 class="video-card__title"><?php echo $str = mb_substr($videocard["title"], 0, 50); ?> . . .</h3>
+                    <p class="video-card__text"><?php echo $str = mb_substr($videocard["text"], 0, 120); ?> . . .</p>
                 </div>
             </div>
 

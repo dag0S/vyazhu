@@ -5,7 +5,7 @@
     <main>
 
         <!-- Калькулятор -->
-        <a class="calculator-follows" href="#">
+        <a class="calculator-follows" href="https://fox-calculator.ru/rukodeliecalc/calculator-petel-vazanie/" target="_blank">
             <div class="calculator-follows__text">Калькулятор</div>
         </a>
 
@@ -140,6 +140,29 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="section-with-videos">
+            <div class="container">
+
+                <div class="section-with-videos__container">
+                    <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+                        <span>Мастер-классы</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Видеоуроки</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-between"></div>
+
+                <?php require 'content-home.php'; ?>
+
+                <form action="#">
+                    <button class="btn-show-more">Показать ещё</button>
+                </form>
             </div>
         </section>
 

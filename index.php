@@ -67,7 +67,7 @@
                                     Настоящая находка для начинающих вязальщиц. Текст книги сопровождается большим
                                     количеством схем, узоров и моделей для вязания женской, детской и мужской одежды, а
                                     также аксессуаров для дома.</p>
-                                <a class="block-with-text__link" href="#">Узнать больше &#62;</a>
+                                <a class="block-with-text__link" href="https://flibusta.su/book/8838-azbuka-vyazaniya/" target="_blank">Узнать больше &#62;</a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                                 <p class="block-with-text__description">Книга знакомит с понятными методами создания
                                     объемных узоров, сборок и волн.
                                 </p>
-                                <a class="block-with-text__link" href="#">Узнать больше &#62;</a>
+                                <a class="block-with-text__link" href="https://mybook.ru/author/elizabet-cimmerman/vyazanie-bez-slez-bazovye-tehniki-i-ponyatnye-shem/read/" target="_blank">Узнать больше &#62;</a>
                             </div>
                         </div>
                         <div class="book-3">
@@ -91,7 +91,7 @@
                                 <p class="block-with-text__description">Книга для тех кто немного умеет вязать и кто
                                     только начинает. Может улучшить технику, понять как правильно создавать сложные
                                     детали.</p>
-                                <a class="block-with-text__link" href="#">Узнать больше &#62;</a>
+                                <a class="block-with-text__link" href="https://readli.net/3d-vyazanie-innovatsionnaya-tehnika-sozdaniya-uzorov-i-dizaynov/" target="_blank">Узнать больше &#62;</a>
                             </div>
                         </div>
                     </div>
