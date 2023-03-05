@@ -40,7 +40,7 @@
     <script src="./js/popup.js"></script>
     <script src="./js/hamburger-menu.js"></script>
     <script src="./js/drop-down-menu.js"></script>
-
+    <script src="./js/show-more.js"></script>
 </body>
 
 </html>

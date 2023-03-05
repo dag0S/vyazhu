@@ -25,18 +25,24 @@
                 <!-- Карточки -->
                 <div class="wrapper-cards margin-bottom-20px">
                     <a href="spitsy.php" class="card">
-                        <img class="card__photo card__photo_mini" src="./img/spitsy.png" alt="photo-1">
+                        <div class="photo-box">
+                            <img class="card__photo card__photo_mini" src="./img/spitsy.png" alt="photo-1">
+                        </div>
                         <h2 class="card__title card__title_upper">Спицы</h2>
                     </a>
                     <a href="kryuchok.php" class="card">
-                        <img class="card__photo card__photo_mini" src="./img/kruchok.png" alt="photo-1">
+                        <div class="photo-box">
+                            <img class="card__photo card__photo_mini" src="./img/kruchok.png" alt="photo-1">
+                        </div>
                         <h2 class="card__title card__title_upper">Крючок</h2>
                     </a>
                     <a href="ruki.php" class="card">
-                        <img class="card__photo card__photo_mini" src="./img/ruki.png" alt="photo-1">
+                        <div class="photo-box">
+                            <img class="card__photo card__photo_mini" src="./img/ruki.png" alt="photo-1">
+                        </div>
                         <h2 class="card__title card__title_upper">Руки</h2>
                     </a>
-                </div>
+                </div>  
                 <!-- Текст под карточками -->
                 <div class="wrapper-text padding-bottom-80px">
                     <p class="text">Если вы хотите научиться вязать спицами - этот раздел для вас. Подробные видеоуроки
@@ -73,9 +79,9 @@
 
                 <?php require 'content-home.php'; ?>
 
-                <form action="#">
-                    <button class="btn-show-more">Показать ещё</button>
-                </form>
+                
+                <button class="btn-show-more" type="button">Показать ещё</button>
+                
             </div>
         </section>
 

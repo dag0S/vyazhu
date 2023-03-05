@@ -51,8 +51,15 @@
                         <img class="nav__lupa" src="./icons/lupa.svg" alt="lupa">
                     </button>
                 </form>
-                <a class="nav__entry" href="#popup">Войти</a>
-        
+                <?php
+                    if (!array_key_exists('user', $_COOKIE)):
+                ?>
+                    <a class="nav__entry" href="#popup">Войти</a>
+                <?php else: ?>
+                    <a href="./personal-area.php">
+                        <img src="./icons/user.svg" alt="user">
+                    </a>
+                <?php endif;?>
                 <!-- Гамбургер меню -->
                 <div class="hamburger">
                     <span></span>

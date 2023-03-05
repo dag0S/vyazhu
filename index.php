@@ -14,15 +14,21 @@
                 <!-- Карточки -->
                 <div class="wrapper-cards margin-bottom-20px">
                     <a href="dlya-nachinayushchikh.php" class="card">
-                        <img class="card__photo" src="./img/photo-1.png" alt="photo-1">
+                        <div class="photo-box">
+                            <img class="card__photo" src="./img/photo-1.png" alt="photo-1">
+                        </div>
                         <h2 class="card__title">Для начинающих</h2>
                     </a>
                     <a href="error-404.php" class="card">
-                        <img class="card__photo" src="./img/photo-2.png" alt="photo-1">
+                        <div class="photo-box">
+                            <img class="card__photo" src="./img/photo-2.png" alt="photo-1">
+                        </div>
                         <h2 class="card__title">Для опытных</h2>
                     </a>
                     <a href="error-404.php" class="card">
-                        <img class="card__photo" src="./img/photo-3.png" alt="photo-1">
+                        <div class="photo-box">
+                            <img class="card__photo" src="./img/photo-3.png" alt="photo-1">
+                        </div>
                         <h2 class="card__title">Мастер-классы</h2>
                     </a>
                 </div>
@@ -106,9 +112,9 @@
 
                 <?php require 'content-home.php'; ?>
 
-                <form action="#">
-                    <button class="btn-show-more">Показать ещё</button>
-                </form>
+                
+                <button class="btn-show-more" type="button">Показать ещё</button>
+                
             </div>
         </section>
     </main>

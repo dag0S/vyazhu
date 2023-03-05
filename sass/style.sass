@@ -232,13 +232,20 @@ body
     &_left
         text-align: left
 
+.photo-box
+    display: inline-block
+    overflow: hidden
+    border-radius: 1rem
+        
+
 .card
     display: inline-block
     position: relative
 
     &__photo
         width: 36.6rem
-
+        transition: 1s
+        display: block
     &__title
         padding: 1.8rem 0
         border-radius: 0 0 1rem 1rem
@@ -252,6 +259,8 @@ body
         transition: .3s all
         &_upper
             top: 10.1rem
+    &:hover img
+        transform: scale(1.1)
     &:hover &__title
         background: $color-green-light
     &:active &__title
@@ -497,6 +506,15 @@ body
     font-size: 1.6rem
     font-weight: 500
     margin-bottom: 4rem
+    cursor: pointer
+    &:hover
+        box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25)
+        border: .1rem solid $color-black
+    &:active
+        background: #585853
+
+.hidden
+    display: none !important
 
 // Footer
 .footer
@@ -674,7 +692,7 @@ body
     position: fixed
     z-index: 2
     top: 9rem
-    right: 0
+    right: -0.1rem
     width: 5.3rem
     height: 21.4rem
     text-decoration: none
@@ -991,7 +1009,7 @@ body
     opacity: 1
     pointer-events: auto
 
-
-
+// Стилизация scrollbar
+@import "_scroll-bar.sass"
 // Медиа запросы для Адаптивного Дизайна
 @import "_media-queries.sass"

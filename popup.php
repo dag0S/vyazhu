@@ -11,17 +11,17 @@
                 <h2 class="title__authorization title__authorization_activated">Вход</h2>
                 <h2 class="title__registration title__registration_deactivated" id="signin">Регистрация</h2>
             </div>
-            <form class="form" action="#">
+            <form class="form" action="validation-form/auth.php" method="post">
                 <label class="form__text margin-bottom-12px" for="">Логин</label>
-                <input class="form__input margin-bottom-18px" type="email" placeholder="e-mail">
+                <input class="form__input margin-bottom-18px" type="email" placeholder="e-mail" name="login">
                 <label class="form__text margin-bottom-12px" for="">Пароль</label>
-                <input class="form__input margin-bottom-18px" type="password" placeholder="• • • • • •">
+                <input class="form__input margin-bottom-18px" type="password" placeholder="• • • • • •" name="pass">
                 <div class="form__wrapp">
                     <p class="form__text3 margin-bottom-30px"><input class="form__checkbox"
                             type="checkbox">Запомнить меня</p>
                     <p class="form__forgot-password form__text3 pointer" id="forgot-password">Забыли пароль?</p>
                 </div>
-                <button class="form__btn form__btn_authorization margin-bottom-30px">Войти</button>
+                <button class="form__btn form__btn_authorization margin-bottom-30px" type="submit">Войти</button>
                 <div class="form__icon-wrapper">
                     <p class="form__text3 margin-bottom-30px">Войти с помощью</p>
                     <a href="#" class="form__icon">
@@ -48,17 +48,17 @@
                 <h2 class="title__authorization open" id="signup">Вход</h2>
                 <h2 class="title__registration">Регистрация</h2>
             </div>
-            <form class="form" action="#">
+            <form class="form" action="validation-form/check.php" method="post">
                 <label class="form__text margin-bottom-12px" for="">Логин</label>
-                <input class="form__input margin-bottom-18px" type="email" placeholder="e-mail">
+                <input class="form__input margin-bottom-18px" type="email" placeholder="e-mail" name="login">
                 <label class="form__text margin-bottom-12px" for="">Пароль</label>
-                <input class="form__input margin-bottom-18px" type="password" placeholder="• • • • • •">
+                <input class="form__input margin-bottom-18px" type="password" placeholder="• • • • • •" name="pass">
                 <label class="form__text margin-bottom-12px" for="">Повторите пароль</label>
-                <input class="form__input margin-bottom-18px" type="password" placeholder="• • • • • •">
+                <input class="form__input margin-bottom-18px" type="password" placeholder="• • • • • •" name="secondpass">
                 <p class="form__text2 margin-bottom-30px"><input class="form__checkbox" type="checkbox">Я согласен с
                     политикой
                     конфиденциальности</p>
-                <button class="form__btn">Зарегистрироваться</button>
+                <button class="form__btn" type="submit">Зарегистрироваться</button>
             </form>
         </div>
     </div>
